@@ -3,20 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD 131</title>
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals home page for Jeniffer Carrillo with personal introduction, Ecuador, Machala, reading, programming, beach travel, and course links.">
+  <meta name="author" content="Jeniffer Carrillo">
+  <title>WDD 131 - Dynamic Web Fundamentals - Jeniffer Carrillo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>WDD 131 - Jeniffer</h1>
+    <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+    <nav>
+      <a href="https://www.linkedin.com/in/jeniffer-carrillo-2b04aa3a8/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/26?lang=eng" target="_blank" rel="noopener">Scripture</a>
+      <a href="#">Final Project</a>
+    </nav>
   </header>
 
   <main>
-    <h2>Welcome</h2>
-    <p>my WDD 131 course work.</p>
+    <h1>Jeniffer Carrillo</h1>
+
+    <section class="card about-card">
+      <h2>About Me</h2>
+      <div class="card-content">
+        <div class="about-text">
+          <p>
+            My name is Jeniffer Carrillo. I was born in Ecuador and I live with
+            my family in Machala, El Oro. I am a lawyer, and I enjoy learning
+            new skills that help me grow personally and professionally.
+          </p>
+          <p>
+            My favorite hobbies are reading and programming. I also have two
+            cats, and I love traveling to the beach because it helps me relax
+            and enjoy time with the people I love.
+          </p>
+        </div>
+        <img class="profile-photo" src="images/jeniffer-carrillo.jpg" alt="Jeniffer Carrillo standing in a garden with palm trees">
+
+        <div class="country">
+          <h3>Machala, Ecuador</h3>
+          <div class="country-content">
+            <figure>
+              <img src="images/ecuador-flag.jpg" alt="Flag of Ecuador">
+              <figcaption>Official Flag of Ecuador</figcaption>
+            </figure>
+            <p>
+              Ecuador is a beautiful country in northwestern South America. It
+              is known for its Pacific coast, the Andes mountains, the Amazon
+              region, and the Galapagos Islands. The flag has a yellow band
+              that is twice as tall as the blue and red bands, with the national
+              coat of arms in the center. Machala is in El Oro province, near
+              the coast, and is known for its warm people and coastal culture.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card resources-card">
+      <h2>Web Dev Resources</h2>
+      <ul>
+        <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+        <li><a href="https://css-tricks.com/" target="_blank" rel="noopener">CSS-Tricks</a></li>
+        <li><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener">freeCodeCamp</a></li>
+        <li><a href="https://web.dev/" target="_blank" rel="noopener">web.dev</a></li>
+      </ul>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Jeniffer C.</p>
+    <p>&copy;<span id="currentyear"></span> Jeniffer Carrillo, Ecuador</p>
+    <p id="lastModified"></p>
   </footer>
 </body>
 </html>
