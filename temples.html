@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Temple album page for WDD 131 with a responsive gallery and navigation menu.">
+  <meta name="author" content="Jeniffer Carrillo">
+  <title>Temple Album | WDD 131</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <span class="site-title">Temple Album</span>
+      <button id="menu" type="button" aria-label="Open navigation menu" aria-expanded="false"></button>
+      <nav id="primary-nav">
+        <a href="#">Home</a>
+        <a href="#">Old</a>
+        <a href="#">New</a>
+        <a href="#">Large</a>
+        <a href="#">Small</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Temple Album</h1>
+    <div class="temple-grid">
+      <figure>
+        <img src="images/temples/guayaquil-ecuador-temple.jpg" alt="Front exterior of the Guayaquil Ecuador Temple at sunset" width="400" height="260" loading="lazy">
+        <figcaption>Guayaquil Ecuador Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temples/lima-peru-temple.jpg" alt="Front exterior of the Lima Peru Temple with gardens and flag" width="400" height="260" loading="lazy">
+        <figcaption>Lima Peru Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temples/bogota-colombia-temple.jpg" alt="Illuminated front exterior of the Bogota Colombia Temple" width="400" height="260" loading="lazy">
+        <figcaption>Bogota Colombia Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temples/santiago-chile-temple.jpg" alt="Front exterior of the Santiago Chile Temple with flags" width="400" height="260" loading="lazy">
+        <figcaption>Santiago Chile Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temples/buenos-aires-argentina-temple.jpg" alt="Front exterior of the Buenos Aires Argentina Temple with gardens" width="400" height="260" loading="lazy">
+        <figcaption>Buenos Aires Argentina Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temples/sao-paulo-brazil-temple.webp" alt="Front exterior of the Sao Paulo Brazil Temple with flag and gardens" width="400" height="260" loading="lazy">
+        <figcaption>Sao Paulo Brazil Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temples/cochabamba-bolivia-temple.jpg" alt="Front exterior of the Cochabamba Bolivia Temple with mountains" width="400" height="260" loading="lazy">
+        <figcaption>Cochabamba Bolivia Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temples/montevideo-uruguay-temple.jpg" alt="Exterior view of the Montevideo Uruguay Temple from above" width="400" height="260" loading="lazy">
+        <figcaption>Montevideo Uruguay Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temples/asuncion-paraguay-temple.jpg" alt="Front exterior of the Asuncion Paraguay Temple with gardens" width="400" height="260" loading="lazy">
+        <figcaption>Asuncion Paraguay Temple</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> Jeniffer Carrillo, Ecuador</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

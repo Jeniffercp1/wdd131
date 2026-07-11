@@ -1,0 +1,152 @@
+:root {
+  --primary: #1b365d;
+  --primary-dark: #0d1f35;
+  --accent: #c45a2a;
+  --accent-light: #f3d7c6;
+  --background: #f7f6f2;
+  --surface: #ffffff;
+  --text: #1e293b;
+  --muted: #5d6878;
+  --border: #d9ded7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.header-content {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.site-title {
+  display: inline-block;
+  font-family: "Lora", Georgia, serif;
+  font-size: 1.55rem;
+  font-weight: 700;
+}
+
+#menu {
+  position: absolute;
+  top: 0.8rem;
+  right: 1rem;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: transparent;
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+#menu::before {
+  content: "\2630";
+}
+
+#menu.open::before {
+  content: "X";
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  max-height: 0;
+  overflow: hidden;
+  background: var(--primary-dark);
+  transition: max-height 0.25s ease;
+}
+
+nav.open {
+  max-height: 320px;
+  margin-top: 0.9rem;
+}
+
+nav a {
+  color: #ffffff;
+  padding: 0.85rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover {
+  background: var(--accent-light);
+  color: var(--primary-dark);
+}
+
+main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+h1 {
+  margin: 0 0 1.25rem;
+  color: var(--primary);
+  font-family: "Lora", Georgia, serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.temple-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+figure {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: 0 6px 16px rgba(27, 54, 93, 0.08);
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 400 / 260;
+  object-fit: cover;
+}
+
+figcaption {
+  padding: 0.85rem;
+  color: var(--primary-dark);
+  font-family: "Lora", Georgia, serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+footer {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: var(--primary);
+  color: #ffffff;
+  text-align: center;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+#lastModified {
+  color: #ffe2b8;
+  font-size: 0.95rem;
+}
