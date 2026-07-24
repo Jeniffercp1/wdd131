@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 131 place page about Ecuador with responsive images, weather, and wind chill.">
+  <meta name="author" content="Jeniffer Carrillo">
+  <title>Ecuador | Place</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Ecuador</h1>
+  </header>
+
+  <main>
+    <picture class="hero">
+      <source srcset="images/place/ecuador-large.webp" media="(min-width: 700px)">
+      <img src="images/place/ecuador-small.webp" alt="Illustrated Ecuador landscape with mountains, coast, and national flag colors" width="700" height="875">
+    </picture>
+
+    <section class="card data-card" aria-labelledby="data-heading">
+      <h2 id="data-heading">Data</h2>
+      <dl>
+        <div>
+          <dt>Area:</dt>
+          <dd>283,561 sq km</dd>
+        </div>
+        <div>
+          <dt>Population:</dt>
+          <dd>18.3 million</dd>
+        </div>
+        <div>
+          <dt>Capital:</dt>
+          <dd>Quito</dd>
+        </div>
+        <div>
+          <dt>Languages:</dt>
+          <dd>Spanish, Kichwa, Shuar</dd>
+        </div>
+        <div>
+          <dt>Currency:</dt>
+          <dd>US Dollar</dd>
+        </div>
+        <div>
+          <dt>Time Zone:</dt>
+          <dd>UTC-5</dd>
+        </div>
+        <div>
+          <dt>Calling Code:</dt>
+          <dd>+593</dd>
+        </div>
+        <div>
+          <dt>Internet TLD:</dt>
+          <dd>.ec</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="card weather-card" aria-labelledby="weather-heading">
+      <h2 id="weather-heading">Weather</h2>
+      <img class="weather-icon" src="images/place/weather.svg" alt="Partly cloudy weather icon" width="64" height="64">
+      <dl>
+        <div>
+          <dt>Temperature:</dt>
+          <dd><span id="temperature">8</span> °C</dd>
+        </div>
+        <div>
+          <dt>Conditions:</dt>
+          <dd>Partly Cloudy</dd>
+        </div>
+        <div>
+          <dt>Wind:</dt>
+          <dd><span id="wind-speed">12</span> km/h</dd>
+        </div>
+        <div>
+          <dt>Wind Chill:</dt>
+          <dd><span id="wind-chill"></span></dd>
+        </div>
+      </dl>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> Jeniffer Carrillo, Ecuador</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

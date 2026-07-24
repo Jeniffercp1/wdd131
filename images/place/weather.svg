@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Partly cloudy weather</title>
+  <desc id="desc">A yellow sun partly covered by a blue cloud.</desc>
+  <circle cx="24" cy="24" r="13" fill="#ffd100"/>
+  <g stroke="#ffd100" stroke-linecap="round" stroke-width="4">
+    <path d="M24 4v8"/>
+    <path d="M24 36v8"/>
+    <path d="M4 24h8"/>
+    <path d="M36 24h8"/>
+    <path d="m10 10 6 6"/>
+    <path d="m32 32 6 6"/>
+    <path d="m38 10-6 6"/>
+  </g>
+  <path fill="#e8f3ff" stroke="#1746a2" stroke-linejoin="round" stroke-width="3" d="M23 52h25a10 10 0 0 0 1-20 14 14 0 0 0-26-5 12 12 0 0 0 0 25Z"/>
+</svg>
