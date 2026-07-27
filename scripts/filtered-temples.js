@@ -46,7 +46,7 @@ const temples = [
     location: "Mexico City, Mexico",
     dedicated: "1983, December, 2",
     area: 116642,
-    imageUrl: "images/temples/mexico-city.jpg"
+    imageUrl: "images/temples/mexico-new.jpg"
   },
   {
     templeName: "Guayaquil Ecuador Temple",
