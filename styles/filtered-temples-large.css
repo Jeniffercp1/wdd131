@@ -1,0 +1,38 @@
+@media (min-width: 700px) {
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  nav {
+    flex-direction: row;
+    max-height: none;
+    overflow: visible;
+    background: transparent;
+  }
+
+  nav.open {
+    margin-top: 0;
+  }
+
+  nav a {
+    min-width: 88px;
+  }
+
+  main {
+    padding: 2rem 1.25rem;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  .temple-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
