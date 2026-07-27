@@ -11,14 +11,14 @@ const temples = [
     location: "Manti, Utah, United States",
     dedicated: "1888, May, 21",
     area: 74792,
-    imageUrl: "images/temples/manti-temple.jpg"
+    imageUrl: "images/temples/manti-utah.jpg"
   },
   {
     templeName: "Payson Utah Temple",
     location: "Payson, Utah, United States",
     dedicated: "2015, June, 7",
     area: 96630,
-    imageUrl: "images/temples/payson-temple.jpg"
+    imageUrl: "images/temples/payson-utah.jpg"
   },
   {
     templeName: "Yigo Guam Temple",

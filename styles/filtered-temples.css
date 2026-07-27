@@ -153,7 +153,7 @@ h1 {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 400 / 260;
+  max-height: 420px;
   object-fit: cover;
 }
 
