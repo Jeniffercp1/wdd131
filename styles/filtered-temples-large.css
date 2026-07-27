@@ -13,7 +13,7 @@
     flex-direction: row;
     max-height: none;
     overflow: visible;
-    background: transparent;
+    background: var(--clear-bg);
   }
 
   nav.open {

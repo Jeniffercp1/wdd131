@@ -8,6 +8,10 @@
   --text: #1e293b;
   --muted: #5d6878;
   --border: #d9ded7;
+  --text-on-dark: #ffffff;
+  --clear-bg: #00000000;
+  --shadow: #1b365d14;
+  --footer-accent: #ffe2b8;
 }
 
 * {
@@ -24,7 +28,7 @@ body {
 
 header {
   background: var(--primary);
-  color: #ffffff;
+  color: var(--text-on-dark);
 }
 
 .header-content {
@@ -47,8 +51,8 @@ header {
   width: 44px;
   height: 44px;
   border: 0;
-  background: transparent;
-  color: #ffffff;
+  background: var(--clear-bg);
+  color: var(--text-on-dark);
   font-size: 2rem;
   line-height: 1;
   cursor: pointer;
@@ -77,7 +81,7 @@ nav.open {
 }
 
 nav a {
-  color: #ffffff;
+  color: var(--text-on-dark);
   padding: 0.85rem 1rem;
   text-align: center;
   text-decoration: none;
@@ -115,7 +119,7 @@ figure {
   border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--surface);
-  box-shadow: 0 6px 16px rgba(27, 54, 93, 0.08);
+  box-shadow: 0 6px 16px var(--shadow);
 }
 
 figure img {
@@ -138,7 +142,7 @@ footer {
   margin-top: 1.5rem;
   padding: 1rem;
   background: var(--primary);
-  color: #ffffff;
+  color: var(--text-on-dark);
   text-align: center;
 }
 
@@ -147,6 +151,6 @@ footer p {
 }
 
 #lastModified {
-  color: #ffe2b8;
+  color: var(--footer-accent);
   font-size: 0.95rem;
 }
