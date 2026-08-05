@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Product review form for WDD 131 with dynamic product options and accessible fields.">
+  <meta name="description" content="Formulario de reseña de productos para WDD 131 con opciones dinamicas y campos accesibles.">
   <meta name="author" content="Jeniffer Carrillo">
-  <title>Product Review | WDD 131</title>
+  <title>Reseña de Producto | WDD 131</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -14,20 +14,20 @@
 </head>
 <body>
   <header>
-    <span class="site-title">Product Review</span>
+    <span class="site-title">Reseña de Producto</span>
   </header>
 
   <main>
-    <h1>Product Review</h1>
+    <h1>Reseña de Producto</h1>
 
     <form method="get" action="review.html">
-      <label for="product">Product Name <span class="required">*</span></label>
+      <label for="product">Nombre del producto <span class="required">*</span></label>
       <select id="product" name="product" required>
         <option value="" disabled selected>Seleccionar un producto...</option>
       </select>
 
       <fieldset>
-        <legend>Overall Rating <span class="required">*</span></legend>
+        <legend>Calificación general <span class="required">*</span></legend>
         <div class="rating-options">
           <label for="rating1">
             <span>1</span>
@@ -57,38 +57,38 @@
         </div>
       </fieldset>
 
-      <label for="install-date">Date of Installation <span class="required">*</span></label>
+      <label for="install-date">Fecha de instalación <span class="required">*</span></label>
       <input type="date" id="install-date" name="install-date" required>
 
       <fieldset>
-        <legend>Which features did you find useful?</legend>
+        <legend>¿Qué características te resultaron útiles?</legend>
         <div class="checkbox-group">
           <label for="durability">
             <input type="checkbox" id="durability" name="features" value="durability">
-            Durability
+            Durabilidad
           </label>
           <label for="ease-of-use">
             <input type="checkbox" id="ease-of-use" name="features" value="ease-of-use">
-            Ease of Use
+            Facilidad de uso
           </label>
           <label for="performance">
             <input type="checkbox" id="performance" name="features" value="performance">
-            Performance
+            Rendimiento
           </label>
           <label for="design">
             <input type="checkbox" id="design" name="features" value="design">
-            Design
+            Diseño
           </label>
         </div>
       </fieldset>
 
-      <label for="review">Written Review</label>
-      <textarea id="review" name="review" rows="5" placeholder="Share what worked well or what could be improved."></textarea>
+      <label for="review">Reseña escrita</label>
+      <textarea id="review" name="review" rows="5" placeholder="Comparte qué funcionó bien o qué podría mejorar."></textarea>
 
-      <label for="username">Your Name</label>
+      <label for="username">Tu nombre</label>
       <input type="text" id="username" name="username" autocomplete="name">
 
-      <input type="submit" value="Submit Review">
+      <input type="submit" value="Enviar reseña">
     </form>
   </main>
 
