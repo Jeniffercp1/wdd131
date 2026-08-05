@@ -33,7 +33,7 @@ const reviewCount = document.querySelector("#review-count");
 const reviewPlural = document.querySelector("#review-plural");
 
 currentYear.textContent = new Date().getFullYear();
-lastModified.textContent = `Última modificación: ${document.lastModified}`;
+lastModified.textContent = `Last Modified: ${document.lastModified}`;
 
 if (productSelect) {
   products.forEach((product) => {
