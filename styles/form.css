@@ -8,6 +8,11 @@
   --muted: #5e6b73;
   --border: #cfd8dc;
   --focus: #0b7285;
+  --star: #8a5b00;
+  --secondary-dark: #552131;
+  --primary-shadow: #204e4a1f;
+  --focus-shadow: #0b728540;
+  --white: #ffffff;
 }
 
 * {
@@ -28,7 +33,7 @@ body {
 header,
 footer {
   background: var(--primary);
-  color: #ffffff;
+  color: var(--white);
   text-align: center;
 }
 
@@ -62,7 +67,7 @@ form,
   border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--panel);
-  box-shadow: 0 8px 24px rgba(32, 78, 74, 0.12);
+  box-shadow: 0 8px 24px var(--primary-shadow);
 }
 
 label,
@@ -94,7 +99,7 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-  outline: 3px solid rgba(11, 114, 133, 0.25);
+  outline: 3px solid var(--focus-shadow);
   border-color: var(--focus);
 }
 
@@ -125,7 +130,7 @@ fieldset {
 }
 
 .rating-options span[aria-hidden="true"] {
-  color: #8a5b00;
+  color: var(--star);
   font-size: 0.9rem;
   letter-spacing: 0;
 }
@@ -158,7 +163,7 @@ input[type="submit"],
 .button-link {
   border: 0;
   background: var(--secondary);
-  color: #ffffff;
+  color: var(--white);
   font-weight: 700;
   text-align: center;
   text-decoration: none;
@@ -167,7 +172,7 @@ input[type="submit"],
 
 input[type="submit"]:hover,
 .button-link:hover {
-  background: #552131;
+  background: var(--secondary-dark);
 }
 
 .confirmation {
