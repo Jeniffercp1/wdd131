@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A1 and A2 English resources from JPS Lenguage with visual lessons, study links, and grammar practice.">
+  <meta name="author" content="Jeniffer Carrillo">
+  <title>A1 and A2 Levels | JPS Lenguage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&amp;family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">JPS</span>
+      <span class="brand-text">JPS Lenguage</span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav id="primary-nav" class="primary-nav">
+      <a href="index.html">Home</a>
+      <a class="active" href="levels.html">A1 &amp; A2</a>
+      <a href="contact.html">Tutoring</a>
+      <a href="references.html">References</a>
+      <a href="siteplan.html">Site Plan</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <p class="eyebrow">Courses and resources</p>
+      <h1>A1 and A2 English learning path</h1>
+      <p>
+        Each level includes simple goals, visual study ideas, and resources that
+        help students practice without feeling overwhelmed.
+      </p>
+    </section>
+
+    <section class="levels-grid" aria-label="English level descriptions">
+      <article class="level-card">
+        <span class="level-badge">A1</span>
+        <h2>Starter English</h2>
+        <p>
+          A1 students learn greetings, numbers, classroom language, family words,
+          daily objects, simple verbs, and basic sentence patterns.
+        </p>
+        <ul>
+          <li>Introduce yourself and spell your name.</li>
+          <li>Ask and answer simple personal questions.</li>
+          <li>Use present tense sentences with common verbs.</li>
+        </ul>
+      </article>
+      <article class="level-card">
+        <span class="level-badge">A2</span>
+        <h2>Everyday English</h2>
+        <p>
+          A2 students expand vocabulary and begin speaking about routines,
+          shopping, directions, past experiences, plans, and simple opinions.
+        </p>
+        <ul>
+          <li>Describe your daily routine and schedule.</li>
+          <li>Ask for help in stores, schools, or offices.</li>
+          <li>Write short messages with clear details.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section aria-labelledby="resources-heading">
+      <div class="section-heading">
+        <p class="eyebrow">Study library</p>
+        <h2 id="resources-heading">Recommended practice resources</h2>
+        <p>Save useful resources on this device and return to them later.</p>
+      </div>
+      <div id="resource-list" class="resource-grid"></div>
+    </section>
+
+    <section class="practice-panel" aria-labelledby="game-heading">
+      <div>
+        <p class="eyebrow">Grammar game</p>
+        <h2 id="game-heading">Choose the correct sentence</h2>
+        <p>
+          Practice short grammar questions. Your last score is saved on this
+          device so you can track your progress.
+        </p>
+      </div>
+      <div id="grammar-game" class="game-card">
+        <p id="game-question"></p>
+        <div id="game-options" class="option-list"></div>
+        <p id="game-feedback" class="feedback" aria-live="polite"></p>
+        <button id="next-question" class="button secondary" type="button">Next question</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year"></span> JPS Lenguage | Jeniffer Carrillo</p>
+    <a href="references.html">References</a>
+  </footer>
+</body>
+</html>

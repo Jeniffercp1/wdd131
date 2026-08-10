@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JPS Lenguage helps Hispanic adults learn basic English with visual lessons, A1 and A2 resources, grammar games, and tutoring.">
+  <meta name="author" content="Jeniffer Carrillo">
+  <title>JPS Lenguage | Visual English Learning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&amp;family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">JPS</span>
+      <span class="brand-text">JPS Lenguage</span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav id="primary-nav" class="primary-nav">
+      <a class="active" href="index.html">Home</a>
+      <a href="levels.html">A1 &amp; A2</a>
+      <a href="contact.html">Tutoring</a>
+      <a href="references.html">References</a>
+      <a href="siteplan.html">Site Plan</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Visual English for Hispanic learners</p>
+        <h1>Learn basic English with clear images, short practice, and flexible support.</h1>
+        <p>
+          JPS Lenguage helps beginner students build confidence in English
+          through A1 and A2 lessons, visual vocabulary, grammar games, and
+          optional tutoring by Zoom.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#level-check">Take the level check</a>
+          <a class="button secondary" href="levels.html">Explore lessons</a>
+        </div>
+      </div>
+      <img src="images/visual-study.png" alt="Illustration of visual English study materials on a computer screen" width="900" height="500">
+    </section>
+
+    <section class="section-grid" aria-labelledby="why-heading">
+      <div>
+        <p class="eyebrow">Why this site exists</p>
+        <h2 id="why-heading">A private and friendly way to start from zero.</h2>
+        <p>
+          Many adults want to learn English but feel nervous when they are just
+          beginning. This site gives them a calm place to practice at their own
+          pace before asking for live help.
+        </p>
+      </div>
+      <div class="feature-list">
+        <article>
+          <h3>Visual lessons</h3>
+          <p>Vocabulary and grammar are supported with simple images and examples.</p>
+        </article>
+        <article>
+          <h3>Flexible learning</h3>
+          <p>Students can study alone or request tutoring when their schedule allows it.</p>
+        </article>
+        <article>
+          <h3>Beginner focus</h3>
+          <p>The content is organized for A1 and A2 learners who need clear basics.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="level-check" class="level-check" aria-labelledby="check-heading">
+      <div>
+        <p class="eyebrow">Quick placement</p>
+        <h2 id="check-heading">Find a starting level</h2>
+        <p>
+          This short check is not an official exam. It helps students decide
+          whether they should begin with A1 basics or A2 practice.
+        </p>
+      </div>
+      <form id="placement-form" class="quiz-card">
+        <fieldset>
+          <legend>Choose the best answer for each question.</legend>
+          <div class="question">
+            <p>1. Which sentence is correct?</p>
+            <label><input type="radio" name="q1" value="1" required> She is my teacher.</label>
+            <label><input type="radio" name="q1" value="0"> She are my teacher.</label>
+          </div>
+          <div class="question">
+            <p>2. What is the opposite of "hot"?</p>
+            <label><input type="radio" name="q2" value="1" required> Cold</label>
+            <label><input type="radio" name="q2" value="0"> Fast</label>
+          </div>
+          <div class="question">
+            <p>3. Complete the sentence: I ____ breakfast at 7:00.</p>
+            <label><input type="radio" name="q3" value="1" required> eat</label>
+            <label><input type="radio" name="q3" value="0"> eats</label>
+          </div>
+          <button class="button primary" type="submit">Show my result</button>
+        </fieldset>
+      </form>
+      <div id="placement-result" class="result-box" aria-live="polite"></div>
+    </section>
+
+    <section class="image-band">
+      <img src="images/grammar-game.png" alt="Illustration of grammar practice tiles on a game board" width="900" height="500" loading="lazy">
+      <div>
+        <p class="eyebrow">Practice that feels lighter</p>
+        <h2>Small grammar games make repetition easier.</h2>
+        <p>
+          Students can review common verbs, classroom words, and sentence order
+          through short activities that are easy to repeat.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year"></span> JPS Lenguage | Jeniffer Carrillo</p>
+    <a href="references.html">References</a>
+  </footer>
+</body>
+</html>

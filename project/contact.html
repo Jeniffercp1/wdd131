@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Request a JPS Lenguage tutoring session by Zoom and choose the English support you need.">
+  <meta name="author" content="Jeniffer Carrillo">
+  <title>Tutoring | JPS Lenguage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&amp;family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">JPS</span>
+      <span class="brand-text">JPS Lenguage</span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav id="primary-nav" class="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="levels.html">A1 &amp; A2</a>
+      <a class="active" href="contact.html">Tutoring</a>
+      <a href="references.html">References</a>
+      <a href="siteplan.html">Site Plan</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-hero">
+      <div>
+        <p class="eyebrow">Zoom tutoring</p>
+        <h1>Ask for help when your schedule allows it.</h1>
+        <p>
+          Tutoring is designed for students who need personal support with
+          pronunciation, grammar, homework, or confidence in basic conversations.
+        </p>
+      </div>
+      <img src="images/tutor-session.png" alt="Illustration of an online tutoring session" width="900" height="500" loading="lazy">
+    </section>
+
+    <section class="contact-grid">
+      <div class="schedule-card">
+        <h2>Available tutoring windows</h2>
+        <ul>
+          <li>Monday and Wednesday: 6:00 PM to 8:00 PM</li>
+          <li>Tuesday and Thursday: 7:00 PM to 9:00 PM</li>
+          <li>Saturday: 9:00 AM to 12:00 PM</li>
+        </ul>
+        <p>
+          Students can request an A1 or A2 session. A tutor will confirm the
+          final Zoom time after reviewing the request.
+        </p>
+        <div id="saved-request" class="saved-request" aria-live="polite"></div>
+      </div>
+
+      <form id="tutoring-form" class="contact-form">
+        <h2>Request a tutoring session</h2>
+        <label for="full-name">Full name</label>
+        <input id="full-name" name="full-name" type="text" autocomplete="name" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+
+        <label for="level">Current level</label>
+        <select id="level" name="level" required>
+          <option value="">Choose a level</option>
+          <option value="A1">A1 beginner</option>
+          <option value="A2">A2 elementary</option>
+          <option value="Not sure">I am not sure</option>
+        </select>
+
+        <label for="topic">What do you want to practice?</label>
+        <select id="topic" name="topic" required>
+          <option value="">Choose a topic</option>
+          <option value="Pronunciation">Pronunciation</option>
+          <option value="Grammar">Grammar</option>
+          <option value="Conversation">Conversation</option>
+          <option value="Homework help">Homework help</option>
+        </select>
+
+        <label for="time">Best time</label>
+        <input id="time" name="time" type="text" placeholder="Example: Tuesday after 7 PM" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us what you need help with."></textarea>
+
+        <button class="button primary" type="submit">Save request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year"></span> JPS Lenguage | Jeniffer Carrillo</p>
+    <a href="references.html">References</a>
+  </footer>
+</body>
+</html>
